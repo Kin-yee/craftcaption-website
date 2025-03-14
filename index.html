@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="CraftCaption - AI-powered tool to generate engaging captions and relevant hashtags for your social media photos. Save time and increase engagement with automatically generated, customizable content.">
-    <meta name="keywords" content="photo captions, social media captions, AI caption generator, Instagram captions, hashtag generator, social media tools, photo description, content creation, Instagram tools, social media automation">
+    <meta name="keywords" content="photo captions, social media captions, AI caption generator, Instagram captions, hashtag generator, social media tools, photo description, content creation, Instagram tools, social media automation, TikTok captions, Facebook post captions">
     <meta name="author" content="Ho Ye Lam">
     <meta name="robots" content="index, follow">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="./images/AppLogo.png" as="image" type="image/png">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:site_name" content="CraftCaption">
@@ -17,12 +21,20 @@
     <meta property="og:url" content="https://craftcaption.com">
     <meta property="og:image" content="https://craftcaption.com/images/AppLogo.png">
     <meta property="og:description" content="Generate engaging captions and relevant hashtags for your social media photos using AI. Save time and increase engagement with automatically generated, customizable content.">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CraftCaption - AI-Powered Photo Caption & Hashtag Generator">
     <meta name="twitter:description" content="Generate engaging captions and relevant hashtags for your social media photos using AI. Save time and increase engagement with automatically generated, customizable content.">
     <meta name="twitter:image" content="https://craftcaption.com/images/AppLogo.png">
+    <meta name="twitter:creator" content="@hoyelam">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="application-name" content="CraftCaption">
+    <meta name="apple-mobile-web-app-title" content="CraftCaption">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     
     <link rel="canonical" href="https://craftcaption.com">
     <link rel="icon" href="favicon.ico">
@@ -34,11 +46,53 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>CraftCaption</title>
+    <title>CraftCaption - AI-Powered Photo Caption & Hashtag Generator for Social Media</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "CraftCaption",
+      "description": "AI-powered tool to generate engaging captions and relevant hashtags for your social media photos.",
+      "operatingSystem": "iOS",
+      "applicationCategory": "SocialNetworkingApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "120"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ho Ye Lam"
+      }
+    }
+    </script>
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://craftcaption.com/",
+      "name": "CraftCaption",
+      "description": "AI-powered tool to generate engaging captions and relevant hashtags for your social media photos.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://craftcaption.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <div>
+    <main>
         <!-- Header -->
         <header>
             <section class="head-section fade-in one">
@@ -51,7 +105,7 @@
                             <p class="secondarySubHeading fade-in three">
                                 No more thinking about what to caption your photos.
                             </p>
-                            <a href="https://apps.apple.com/us/app/craftcaption-ai-hashtags/id6742781620" target="_blank" class="appstoreLink fade-in three">
+                            <a href="https://apps.apple.com/us/app/craftcaption-ai-hashtags/id6742781620" target="_blank" rel="noopener" class="appstoreLink fade-in three" aria-label="Download CraftCaption from App Store">
                                 Download now
                             </a>
                         </center>
@@ -60,19 +114,19 @@
             </section>
         </header>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="App Preview">
             <div class="flex-grid fade">
                 <div class="col">
-                    <center><img src="./images/four_screens_app_demo.png" class="image2"></center>
+                    <center><img src="./images/four_screens_app_demo.png" class="image2" alt="CraftCaption app interface showing multiple screens" width="800" height="450" loading="lazy"></center>
                 </div>
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="App Features Overview">
             <div class="flex-grid fade">
                 <div class="col">
                     <center>
-                        <h1 class="threadHeading">Get captions and hashtags for your photos</h1>
+                        <h2 class="threadHeading">Get captions and hashtags for your photos</h2>
                         <p class="threadSubHeading1">
                             No more thinking about what to caption your photos.
                         </p>
@@ -81,15 +135,15 @@
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="Perfect Social Media Post Feature">
             <div class="flex-grid fade">
                 <div class="col">
-                    <img src="./images/mockup-one.png" class="image1">
+                    <img src="./images/mockup-one.png" class="image1" alt="CraftCaption mockup showing social media post preparation" width="400" height="800" loading="lazy">
 
                 </div>
                 <div class="col">
                     <div>
-                        <h1 class="threadHeading">Prepare your perfect social media post</h1>
+                        <h2 class="threadHeading">Prepare your perfect social media post</h2>
                         <p class="threadSubHeading">
                             No more thinking about what to caption your photos.
                         </p>
@@ -98,11 +152,11 @@
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="Caption and Hashtag Generation">
             <div class="flex-grid fade">
                 <div class="col">
                     <div>
-                        <h1 class="threadHeading">Captions and hashtags</h1>
+                        <h2 class="threadHeading">Captions and hashtags</h2>
                         <p class="threadSubHeading">
                             Automatically craft captions and hashtags for your photos for social media.
                         </p>
@@ -111,19 +165,19 @@
                 </div>
 
                 <div class="col">
-                    <img src="./images/mockup-two.png" class="image1">
+                    <img src="./images/mockup-two.png" class="image1" alt="CraftCaption mockup showing caption and hashtag generation" width="400" height="800" loading="lazy">
                 </div>
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="Copy and Paste Feature">
             <div class="flex-grid fade">
                 <div class="col">
-                    <img src="./images/mockup-three.png" class="image1">
+                    <img src="./images/mockup-three.png" class="image1" alt="CraftCaption mockup showing copy and paste functionality" width="400" height="800" loading="lazy">
                 </div>
                 <div class="col">
                     <div>
-                        <h1 class="threadHeading">Copy and paste</h1>
+                        <h2 class="threadHeading">Copy and paste</h2>
                         <p class="threadSubHeading">
                             Copy and paste the captions and hashtags you want to use.
                         </p>
@@ -133,11 +187,11 @@
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="Customization Feature">
             <div class="flex-grid fade">
                 <div class="col">
                     <div>
-                        <h1 class="threadHeading">More control, more your style</h1>
+                        <h2 class="threadHeading">More control, more your style</h2>
                         <p class="threadSubHeading">
                             Recraft your captions and hashtags to your own needs with your own style.
                         </p>
@@ -145,19 +199,19 @@
                 </div>
 
                 <div class="col">
-                    <img src="./images/mockup-four.png" class="image1">
+                    <img src="./images/mockup-four.png" class="image1" alt="CraftCaption mockup showing customization options" width="400" height="800" loading="lazy">
                 </div>
             </div>
         </section>
 
-        <section class="section fade-in three">
+        <section class="section fade-in three" aria-label="Pro Subscription">
             <div class="flex-grid fade">
                 <div class="col">
-                    <img src="./images/mockup-five.png" class="image1">
+                    <img src="./images/mockup-five.png" class="image1" alt="CraftCaption Pro subscription features" width="400" height="800" loading="lazy">
                 </div>
                 <div class="col">
                     <div>
-                        <h1 class="threadHeading">CraftCaption Pro</h1>
+                        <h2 class="threadHeading">CraftCaption Pro</h2>
                         <p class="threadSubHeading">
                             Unlock everything and unlimited use of CraftCaption with a Pro subscription.
                         </p>
@@ -166,37 +220,39 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
 
     <!-- Footer -->
-    <section class="footer-section fade-in three">
+    <footer class="footer-section fade-in three">
         <div class="flex-grid fade">
             <div style="justify-content: center; flex: 1; margin-top: 5%;">
                 <center>
-                    <a href="https://apps.apple.com/us/app/craftcaption-ai-hashtags/id6742781620" target="_blank" class="appstoreLink fade-in three">
+                    <a href="https://apps.apple.com/us/app/craftcaption-ai-hashtags/id6742781620" target="_blank" rel="noopener" class="appstoreLink fade-in three" aria-label="Download CraftCaption from App Store">
                         Download now
                     </a>
 
-                    <p class="secondarySubHeading" style="padding-top: 2.5%">
-                        <a href="tos.html" class="link">Terms and Conditions</a>
+                    <nav aria-label="Footer Navigation">
+                        <p class="secondarySubHeading" style="padding-top: 2.5%">
+                            <a href="tos.html" class="link">Terms and Conditions</a>
+                        </p>
+                        <p class="secondarySubHeading">
+                            <a href="privacy.html" class="link">Privacy Policy</a>
+                        </p>
+                        <p class="secondarySubHeading">
+                            <a href="support.html" class="link">Support</a>
+                        </p>
+                    </nav>
+                    <p class="secondarySubHeading">
+                        Development by <a href="https://twitter.com/hoyelam" class="link" rel="noopener">Hoye Lam</a>
                     </p>
                     <p class="secondarySubHeading">
-                        <a href="privacy.html" class="link">Privacy Policy</a>
+                        ©2025 Kin-Yee
                     </p>
-                    <p class="secondarySubHeading">
-                        <a href="support.html" class="link">Support</a>
-                    </p>
-                    <p class="secondarySubHeading">
-                        Development by <a href="https://twitter.com/hoyelam" class="link">Hoye Lam</a>
-                    </p>
-                    <p class="secondarySubHeading"">
-                    ©2025 Kin-Yee
-                </p>
                 </center>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
